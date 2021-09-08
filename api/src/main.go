@@ -17,7 +17,6 @@ import (
 )
 
 func main() {
-	log.Println(config.DBPassword)
 	services, err := persistence.NewRepositories("pgx", config.Host, config.Port, config.DBUser, config.DBPassword, config.DBName)
 	if err != nil {
 		log.Println(err)
