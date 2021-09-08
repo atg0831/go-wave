@@ -12,5 +12,5 @@ jobs:
           DB_INPUT: password
         run: ./runserver.sh --dev
       - name: watch api logs
-        run: docker-compose logs api
+        run: docker-compose logs -f api
       
