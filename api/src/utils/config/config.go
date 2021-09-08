@@ -30,7 +30,7 @@ func postgresInit() {
 	// dbDriver := "pgx"
 	host := "127.0.0.1"
 	dbUser := "project"
-	dbPassword := "password"
+	// dbPassword := "password"
 	dbName := "projectdb"
 	port := "54320"
 
@@ -40,9 +40,9 @@ func postgresInit() {
 	if DBUser == "" {
 		DBUser = dbUser
 	}
-	if DBPassword == "" {
-		DBPassword = dbPassword
-	}
+	// if DBPassword == "" {
+	// 	DBPassword = dbPassword
+	// }
 	if DBName == "" {
 		DBName = dbName
 	}
